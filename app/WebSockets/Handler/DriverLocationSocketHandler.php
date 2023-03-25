@@ -20,7 +20,6 @@ class DriverLocationSocketHandler implements MessageComponentInterface
 
         Http::post('http://hexaride-admin.6am.one/api/driver/ride/track-location', [
                 'user_id' => $data['user_id'],
-                'type' => 'mamu',
                 'latitude' => $data['latitude'],
                 'longitude' => $data['longitude'],
                 'zone_id' => $data['zone_id']
